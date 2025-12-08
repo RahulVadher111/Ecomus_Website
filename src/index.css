@@ -1,0 +1,548 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.cricleicone{
+  background-color: #EBEBEB;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  transition: background-color 0.9s ease;
+}
+
+.facebook:hover{
+  background-color: #1877F2 !important;
+  color: #fff !important;
+}
+
+.twitter:hover{
+  background-color: black !important;
+  color: #fff !important;
+}
+.instagram:hover{
+  background: linear-gradient(#8a3ab9, #e95950, #fccc63);
+  color: #fff !important;
+}
+
+.tiktok:hover{
+  background: linear-gradient(#25f4ee, #000, #fe2c55);
+  color: #fff !important;
+}
+.pinterest:hover{
+  background-color: #db1215 !important;
+  color: #fff !important;
+}
+
+/* lauguage */
+
+.custom-dropdown {
+  position: relative;
+  padding-top: 10px;
+}
+
+.dropdown-btn {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 470;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu-box {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 200px;
+  background: #fff;
+  padding: 13px;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f3f3f3;
+}
+
+
+
+/* navbar */ 
+
+/* pages hover */
+
+/* Pages submenu on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Positioning right side */
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -5px;
+}
+.shope:hover{
+  color: #db1215 !important;
+  cursor: pointer;
+}
+.icons-wrapper .icon-box i {
+  -webkit-text-stroke: 1px;    /* thickness */
+  
+}
+
+
+.hover{
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.75rem; /* same as px-1 py-2 */
+  color: black;
+  font-size: 1rem; /* text-large */
+  font-family: sans-serif;
+  /* font-semibold */
+  text-decoration: none;
+}
+
+.hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(10, 10, 10);
+  transition: all 0.3s ease;
+}
+
+.hover:hover::after {   
+  width: 5rem; /* same as w-12 in Tailwind (48px) */
+}
+
+.text{
+  color: red;
+}
+
+
+.rotate-y-hover {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /* background-color: bisque; */
+}
+
+.rotate-y-hover:hover {
+  transform: rotateY(180deg);
+}
+.bg{
+  background-color: #f8f6f3;
+}
+
+/* bagges iconme */
+
+.icons-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px; /* Same spacing as image */
+  
+}
+.icon-box i {
+  cursor: pointer;
+  font-weight:bolder;
+}
+
+.icon-box:hover{
+  color: #db1215 !important;
+}
+.badge-count {
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  background: #db1215;
+  color: white;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+/* Apply smooth hover zoom only to the image */
+.zoom-img {
+  transition: transform 0.8s ease; /* smooth effect */
+}
+
+.zoom-img:hover {
+  transform: scale(1.05); /* slight zoom */
+}
+
+/* .position-relative {
+  overflow: hidden;
+} */
+
+
+/* home page */
+.hoverborder:hover{
+  border: 1px solid black;
+  
+  
+}
+
+
+/* Common wrapper for animation */
+.banner-text h1,
+.banner-text p,
+.banner-text button {
+  opacity: 0;
+}
+
+/* Heading animation */
+.banner-text h1 {
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Paragraph animation */
+.banner-text p {
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+/* Button animation */
+.banner-text button {
+  animation: zoomIn 0.8s ease-out forwards;
+  animation-delay: 1.2s;
+}
+
+/* Keyframes */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hover effect on button */
+.banner-text button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(151, 65, 75, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+/* marquee */
+
+.scroll-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.scroll-content {
+  display: flex;
+  animation: slide 17s linear infinite;
+}
+
+.scroll-content span {
+  margin-right: 60px;
+  font-size: 22px;
+  
+}
+
+/* Smooth infinite loop */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* catargeris */
+.cat-prev,
+.cat-next {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.cat-prev:hover,
+.cat-next:hover {
+  background: #000;
+  color: white ;
+}
+/* btn hover */
+
+.button.category-btn {
+  background-color: #ffffff !important;
+  color: #000 !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Arrow hidden with no space */
+button.category-btn i {
+  opacity: 0;
+  transform: translateX(-10px); /* completely off-screen */
+  transition: all 0.3s ease !important;
+  margin-left: 0;
+}
+
+/* Hover effect */
+button.category-btn:hover {
+  background: #000 !important;
+  color: #fff !important;
+  padding-right: 30px; /* button thoda bada hoga on hover */
+}
+
+/* Arrow appear on hover */
+button.category-btn:hover i {
+  opacity: 1;
+  transform: translateX(5px); /* slide smooth */
+  margin-left: 8px;
+}
+
+
+  
+/* Seller  */
+.category-card {
+  border: 1px solid #ddd;
+  border-radius: 18px;
+  padding: 28px;
+  height: 220px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Arrow Button */
+.arrow-btn {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.35s ease-in-out;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Hover Effect */
+.category-card:hover .arrow-btn {
+  width: 45px;
+  height: 45px;
+  opacity: 1;
+  overflow: visible;
+  transform: translateY(0px);
+}
+
+/* Card hover slight lift */
+.category-card:hover {
+  transform: translateY(-4px);
+  border-color: #000;
+}
+
+
+/* scroll btn  */
+/* ScrollToTop.css */
+.scroll-to-top-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.scroll-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.scroll-btn .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  z-index: 2;
+}
+
+.scroll-btn .progress-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: red;  
+  transition: height 0.2s ease;
+  z-index: 1;
+}
+
+/* client ratting*/
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #ddd;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.slider-arrow:hover {
+  background: #000;
+  color: #fff;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+
+/* happy clidents shope part */
+
+/* Hotspot Circle */
+.background:hover{
+  background-color: black !important;
+  color: #fff !important;
+}
+.hotspot {
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  /* border: 2px solid #000; */
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.hotspot .dot {
+  width: 7px;
+  height: 7px;
+  background: #000;
+  border-radius: 50%;
+}
+
+/* Popup Card */
+.hotspot-card {
+  position: absolute;
+  background: #fff;
+  /* border-radius: 15px; */
+  padding: 5px 5px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -40%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hotspot {
+    width: 22px;
+    height: 22px;
+  }
+  .hotspot-card {
+    min-width: 200px;
+    padding: 12px;
+  }
+}
+
+
+
+
+
+
