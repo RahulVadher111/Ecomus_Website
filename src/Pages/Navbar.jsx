@@ -593,6 +593,9 @@ const [showNavbar, setShowNavbar] = useState(true);
                             />
                             <div className='pt-4'>
                           <p>Oversized printed T-Shirt <br /> <span>$10.00</span></p>
+
+
+                          
                            
                             </div>
                            
