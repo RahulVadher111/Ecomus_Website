@@ -210,11 +210,14 @@ const [showNavbar, setShowNavbar] = useState(true);
               <div className="dropdown-item" onClick={() => { setSelectedLang("English"); setLangOpen(false); }}>
                 English
               </div>
-              <div className="dropdown-item" onClick={() => { setSelectedLang("Hindi"); setLangOpen(false); }}>
-                Hindi
+              <div className="dropdown-item" onClick={() => { setSelectedLang("العربية"); setLangOpen(false); }}>
+                العربية
               </div>
-              <div className="dropdown-item" onClick={() => { setSelectedLang("Gujarati"); setLangOpen(false); }}>
-                Gujarati
+              <div className="dropdown-item" onClick={() => { setSelectedLang("简体中文"); setLangOpen(false); }}>
+                简体中文
+              </div>
+              <div className="dropdown-item" onClick={() => { setSelectedLang("اردو"); setLangOpen(false); }}>
+                اردو
               </div>
             </div>
           )}
@@ -595,7 +598,7 @@ const [showNavbar, setShowNavbar] = useState(true);
                           <p>Oversized printed T-Shirt <br /> <span>$10.00</span></p>
 
 
-                          
+
                            
                             </div>
                            
