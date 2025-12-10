@@ -26,20 +26,24 @@ function Categories() {
 
   return (
     <div className="container-fluid py-5 p-5">
-
       {/* Arrows first, then heading */}
       <div className="d-flex align-items-center mb-4">
-        <button ref={prevRef} className="cat-prev btn btn-outline-dark rounded-circle me-2">
+        <button
+          ref={prevRef}
+          className="cat-prev btn btn-outline-dark rounded-circle me-2"
+        >
           ‹
         </button>
-        <button ref={nextRef} className="cat-next btn btn-outline-dark rounded-circle me-3">
+        <button
+          ref={nextRef}
+          className="cat-next btn btn-outline-dark rounded-circle me-3"
+        >
           ›
         </button>
         <h6 className="fw-bold m-0">SHOP BY CATEGORIES</h6>
       </div>
 
       <div className="row g-4">
-
         {/* LEFT – Swiper */}
         <div className="col-12 col-lg-9">
           <Swiper
@@ -60,16 +64,14 @@ function Categories() {
             {infromation.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="position-relative">
-
                   <img
                     src={item.image}
                     className="img-fluid w-100 rounded-4"
                     alt={item.title}
-                    
                   />
 
                   {/* YOUR SAME BUTTON CLASS */}
-                  <button 
+                  <button
                     className="btn bg-white category-btn fw-semibold px-4 py-2 position-absolute d-flex align-items-center"
                     style={{
                       bottom: "20px",
@@ -86,14 +88,16 @@ function Categories() {
         </div>
 
         <div className="col-lg-3">
-          <div
-            className="border broder-dark rounded-4 p-4 d-flex flex-column justify-content-end h-100"
-          >
+          <div className="border broder-dark rounded-4 p-4 d-flex flex-column justify-content-end h-100">
             <h2>Discover all new items</h2>
-            <button className=" fs-4 border border-dark btn  rounded-circle m-0" style={{width:"50px"}}>↗</button>
+            <button
+              className=" fs-4 border border-dark btn  rounded-circle m-0"
+              style={{ width: "50px" }}
+            >
+              ↗
+            </button>
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button, Dropdown } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Seller_1_01 from "../Images/Navbar_imgs/Seller_imgs/Seller_1_01.jpg";
 import Seller_1_02 from "../Images/Navbar_imgs/Seller_imgs/Seller_1_02.jpg";
@@ -41,6 +42,7 @@ import Seller_11_03 from "../Images/Navbar_imgs/Seller_imgs/Seller_11_03.jpg";
 
 import Seller_12_01 from "../Images/Navbar_imgs/Seller_imgs/Seller_12_01.jpg";
 import Seller_12_02 from "../Images/Navbar_imgs/Seller_imgs/Seller_12_02.jpg";
+
 
 const products = [
   {
@@ -141,21 +143,76 @@ const products = [
   },
 ];
 
-function Seller_arrivals() {
+
+function Shopping_page() {
   return (
-    <div className="py-5 container-fluid p-5">
-      <h1
-        className="text-center mb-3"
-        style={{ fontFamily: "Albert Sans, sans-serif" }}
-      >
-        Best Seller
-      </h1>
-      <p
-        className="text-center mb-5 fs-6"
-        style={{ fontFamily: "Albert Sans, sans-serif" }}
-      >
-        Shop the Latest Styles: Stay ahead of the curve with our newest arrivals
-      </p>
+
+    <>
+
+    <div>
+        <div className="new-arrival-section">
+
+      {/* ------- Top Title Section ------- */}
+      <div className="text-center py-5">
+        <h1 className="">New Arrival</h1>
+        <p className="text-muted">
+          Shop through our latest selection of Fashion
+        </p>
+      </div>
+
+      
+    </div>
+    </div>
+    <div className="py-5 container-fluid p-5 my-" >
+       <div>
+
+        {/* ------------- Filter Row ------------- */}
+        <Row className="align-items-center mb-4 justify-content-between">
+
+          {/* Filter Button */}
+          <Col lg="2" xs="4">
+            <Button variant="light" className="filter-btn shadow-sm w-50 d-flex align-items-center gap-2">
+              <i className="bi bi-filter"></i> FILTER
+            </Button>
+          </Col>
+
+          {/* Icons (center) */}
+          <Col lg="6" className="d-none d-lg-flex justify-content-center gap-3 view-icons">
+           
+            <span className="size text-muted">:-</span>
+            <span className="size text-muted">::</span>
+            <span className="size text-muted">:::</span>
+            <span className="size">::::</span>
+            <span className="size text-muted">:::::</span>
+            <span className="size text-muted">::::::</span>
+
+
+
+            {/* <i class="bi bi-grid-1x2"></i>
+            <i class="bi bi-grid-3x2"></i>
+            <i className="bi bi-grid-fill active-icon"></i>
+            <i className="bi bi-grid-3x3-gap-fill"></i>
+            <i class="bi bi-grid-4x4"></i> */}
+            
+          </Col>
+
+          {/* Dropdown + RTL */}
+          <Col lg="3" xs="8" className="d-flex justify-content-end align-items-center gap-3">
+            <Dropdown>
+              <Dropdown.Toggle variant="light" className="shadow-sm">
+                Featured
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item>Latest</Dropdown.Item>
+                <Dropdown.Item>Trending</Dropdown.Item>
+                <Dropdown.Item>Popular</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+
+          </Col>
+        </Row>
+      </div>
 
       <Row>
         {products.map((product) => (
@@ -164,10 +221,21 @@ function Seller_arrivals() {
           </Col>
         ))}
       </Row>
-    </div>
+      
+
+      <div className="text-center">
+        <a href="#" className="btn btn-light bg-dark text-white border mx-2">1</a>
+        <a href="#" className="btn btn-light border mx-2">2</a>
+        <a href="#" className="btn btn-light border mx-2">3</a>
+        <a href="#" className="btn btn-light border mx-2">4</a>
+        <a href="#" className="btn btn-light border mx-2"><i class="bi bi-chevron-right"></i></a>
+
+
+      </div>
+</div>
+</>
   );
 }
-
 function ProductCard({ product }) {
   const [imgIndex, setImgIndex] = useState(0);
   const [zoomImage, setZoomImage] = useState(false);
@@ -181,7 +249,7 @@ function ProductCard({ product }) {
     }, 100);
   };
 
-  return (
+ return (
     <>
       <div
         className=" rounded-3  position-relative"
@@ -279,8 +347,11 @@ function ProductCard({ product }) {
           ))}
         </div>
       </div>
+
+     
     </>
   );
 }
 
-export default Seller_arrivals;
+
+export default Shopping_page

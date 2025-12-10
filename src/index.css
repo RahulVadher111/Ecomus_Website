@@ -419,34 +419,48 @@ button.category-btn:hover i {
 .scroll-btn {
   width: 40px;
   height: 40px;
-  background-color: #000;
-  color: #fff;
-  border-radius: 50%;
+  background: #fff;
+  border-radius: 8px;
   position: relative;
   cursor: pointer;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  overflow: hidden;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.10);
+  overflow: visible;
 }
 
-.scroll-btn .arrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  z-index: 2;
+/* Arrow center */
+.arrow-icon {
+  font-size: 20px;
+  color: #000;
+  z-index: 10;
 }
 
-.scroll-btn .progress-bar {
+.border-progress {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: red;  
-  transition: height 0.2s ease;
-  z-index: 1;
+  inset: 0;
+  border-radius: 8px;
+  pointer-events: none;
 }
+
+.border-progress::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 1px solid black;
+
+  /* 4 side border animation */
+  border-image: conic-gradient(#000 calc(var(--p) * 1%), transparent 0) 1;
+  
+  transition: border-image 0.2s linear;
+}
+
+
+
+
+
 
 /* client ratting*/
 
@@ -767,3 +781,59 @@ button.category-btn:hover i {
   color: #fff;
 }
 
+/* Shopping page styale */
+.new-arrival-section {
+  background-color: #f8f3f6;
+}
+
+/* Filter Button */
+.filter-btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* RTL Button */
+.rtl-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Icons row styling */
+.view-icons i {
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.view-icons i:hover,
+.view-icons .active-icon {
+  opacity: 1;
+}
+
+/* Product Card */
+.product-card img {
+  border-radius: 12px;
+}
+
+/* Discount Badge */
+.badge-discount {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #ff5722;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.size{
+  font-size: 35px;
+  font-weight: 500;
+  cursor: pointer;
+}
