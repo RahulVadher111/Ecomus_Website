@@ -199,14 +199,19 @@ function Shopping_page() {
           {/* Dropdown + RTL */}
           <Col lg="3" xs="8" className="d-flex justify-content-end align-items-center gap-3">
             <Dropdown>
-              <Dropdown.Toggle variant="light" className="shadow-sm">
-                Featured
+              <Dropdown.Toggle variant="light" className="shadow-sm w-100  border">
+                Featured 
               </Dropdown.Toggle>
 
-              <Dropdown.Menu>
+              <Dropdown.Menu className="p-1 pt-2 pb-2">
                 <Dropdown.Item>Latest</Dropdown.Item>
-                <Dropdown.Item>Trending</Dropdown.Item>
-                <Dropdown.Item>Popular</Dropdown.Item>
+                <Dropdown.Item>Beat Selling</Dropdown.Item>
+                <Dropdown.Item>Alphabetically, A-Z</Dropdown.Item>
+                <Dropdown.Item>Alphabetically, Z-A</Dropdown.Item>
+                <Dropdown.Item>Price, low to high</Dropdown.Item>
+                <Dropdown.Item>Price, high to low</Dropdown.Item>
+                <Dropdown.Item>Date, old to new</Dropdown.Item>
+                <Dropdown.Item>Date, new to old</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 

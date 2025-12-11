@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Nav } from "react-bootstrap";
 import logo from "../Images/Navbar_imgs/logo.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import {  NavLink } from "react-router-dom";
+
 // import { useState } from "react";
 
 // home imgs
@@ -269,9 +271,9 @@ function Navbar() {
       >
         <div className="container-fluid">
           <div className="row align-items-center  mx-3 pt-2">
-            <div className="col-md-3">
+            <NavLink to="/" className="col-md-3">
               <img src={logo} alt="" />
-            </div>
+            </NavLink>
 
             <div
               className="col-md-6  d-flex align-item-center justify-content-center "
@@ -414,9 +416,9 @@ function Navbar() {
                   onMouseEnter={() => setShowShop(true)}
                   onMouseLeave={() => setShowShop(false)}
                 >
-                  <a className="nav-link text-dark hover">
+                  <NavLink to="/Shopping_page" className="nav-link text-dark hover">
                     Shop <i className="bi bi-chevron-down Small"></i>
-                  </a>
+                  </NavLink>
 
                   {/* Mega Menu */}
                   <div
@@ -434,14 +436,14 @@ function Navbar() {
                             style={{ fontSize: "14px" }}
                           >
                             <h6 className=" pb-3 fw-semibold">Shop layouts</h6>
-                            <ul className="list-unstyled text-muted pb-2">
+                            <NavLink to="/Shopping_page" className="list-unstyled text-decoration-none text-muted pb-2">
                               <li className="pb-3 shope">Default</li>
                               <li className="pb-3 shope">Left sidebar</li>
                               <li className="pb-3 shope">Right sidebar</li>
                               <li className="pb-3 shope">Fullwidth</li>
                               <li className="pb-3 shope">Sub collection</li>
                               <li className="pb-3 shope">Collections list</li>
-                            </ul>
+                            </NavLink>
                           </div>
 
                           <div
@@ -449,7 +451,7 @@ function Navbar() {
                             style={{ fontSize: "14px" }}
                           >
                             <h6 className=" pb-3 fw-semibold">Features</h6>
-                            <ul className="list-unstyled text-muted">
+                            <NavLink to="/Shopping_page"  className="list-unstyled text-muted text-decoration-none">
                               <li className="pb-3 shope">Pagination links</li>
                               <li className="pb-3 shope">
                                 Pagination loadmore
@@ -459,7 +461,7 @@ function Navbar() {
                               </li>
                               <li className="pb-3 shope">Filter sidebar</li>
                               <li className="pb-3 shope">Filter hidden</li>
-                            </ul>
+                            </NavLink>
                           </div>
 
                           <div
@@ -469,7 +471,7 @@ function Navbar() {
                             <h6 className=" pb-3 fw-semibold">
                               Product styles
                             </h6>
-                            <ul className="list-unstyled text-muted">
+                            <NavLink to="/Shopping_page" className="list-unstyled text-muted text-decoration-none">
                               <li className="pb-3 shope">Product style 01</li>
                               <li className="pb-3 shope ">Product style 02</li>
                               <li className="pb-3 shope">Product style 03</li>
@@ -477,7 +479,7 @@ function Navbar() {
                               <li className="pb-3 shope">Product style 05</li>
                               <li className="pb-3 shope">Product style 06</li>
                               <li className="pb-3 shope">Product style 07</li>
-                            </ul>
+                            </NavLink>
                           </div>
 
                           <div className="row g-3">

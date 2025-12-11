@@ -2,6 +2,8 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import {  NavLink } from "react-router-dom";
+
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -71,6 +73,7 @@ function Categories() {
                   />
 
                   {/* YOUR SAME BUTTON CLASS */}
+                  <NavLink to="/Shopping_page">
                   <button
                     className="btn bg-white category-btn fw-semibold px-4 py-2 position-absolute d-flex align-items-center"
                     style={{
@@ -81,6 +84,7 @@ function Categories() {
                     {item.title}
                     <i className="bi bi-arrow-up-right ms-2"></i>
                   </button>
+                  </NavLink>
                 </div>
               </SwiperSlide>
             ))}
@@ -90,12 +94,12 @@ function Categories() {
         <div className="col-lg-3">
           <div className="border broder-dark rounded-4 p-4 d-flex flex-column justify-content-end h-100">
             <h2>Discover all new items</h2>
-            <button
+            <NavLink to="/Shopping_page"
               className=" fs-4 border border-dark btn  rounded-circle m-0"
               style={{ width: "50px" }}
             >
               ↗
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>
