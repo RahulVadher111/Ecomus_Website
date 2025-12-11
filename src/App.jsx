@@ -12,6 +12,7 @@ import Scroll_btn from './Pages/Scroll_btn'
 import Seller_arrivals from './Pages/Seller_arrivals'
 import Shop_Gram from './Pages/Shop_Gram'
 import Shopping_page from './Pages/Shopping_page';
+import ProductCard from './Pages/ProductCard';
 
 function App() {
  
@@ -37,6 +38,8 @@ function App() {
     />
 
         <Route path="/Shopping_page" element={<Shopping_page />} />  
+        <Route path="/Product_card" element={<ProductCard />} />  
+
 
       </Routes>
 

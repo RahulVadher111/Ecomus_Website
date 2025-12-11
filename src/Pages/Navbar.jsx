@@ -4,7 +4,7 @@ import logo from "../Images/Navbar_imgs/logo.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // import { useState } from "react";
 
@@ -416,7 +416,10 @@ function Navbar() {
                   onMouseEnter={() => setShowShop(true)}
                   onMouseLeave={() => setShowShop(false)}
                 >
-                  <NavLink to="/Shopping_page" className="nav-link text-dark hover">
+                  <NavLink
+                    to="/Shopping_page"
+                    className="nav-link text-dark hover"
+                  >
                     Shop <i className="bi bi-chevron-down Small"></i>
                   </NavLink>
 
@@ -436,7 +439,10 @@ function Navbar() {
                             style={{ fontSize: "14px" }}
                           >
                             <h6 className=" pb-3 fw-semibold">Shop layouts</h6>
-                            <NavLink to="/Shopping_page" className="list-unstyled text-decoration-none text-muted pb-2">
+                            <NavLink
+                              to="/Shopping_page"
+                              className="list-unstyled text-decoration-none text-muted pb-2"
+                            >
                               <li className="pb-3 shope">Default</li>
                               <li className="pb-3 shope">Left sidebar</li>
                               <li className="pb-3 shope">Right sidebar</li>
@@ -451,7 +457,10 @@ function Navbar() {
                             style={{ fontSize: "14px" }}
                           >
                             <h6 className=" pb-3 fw-semibold">Features</h6>
-                            <NavLink to="/Shopping_page"  className="list-unstyled text-muted text-decoration-none">
+                            <NavLink
+                              to="/Shopping_page"
+                              className="list-unstyled text-muted text-decoration-none"
+                            >
                               <li className="pb-3 shope">Pagination links</li>
                               <li className="pb-3 shope">
                                 Pagination loadmore
@@ -471,7 +480,10 @@ function Navbar() {
                             <h6 className=" pb-3 fw-semibold">
                               Product styles
                             </h6>
-                            <NavLink to="/Shopping_page" className="list-unstyled text-muted text-decoration-none">
+                            <NavLink
+                              to="/Shopping_page"
+                              className="list-unstyled text-muted text-decoration-none"
+                            >
                               <li className="pb-3 shope">Product style 01</li>
                               <li className="pb-3 shope ">Product style 02</li>
                               <li className="pb-3 shope">Product style 03</li>
@@ -561,7 +573,7 @@ function Navbar() {
                               <h6 className="fw-semibold pb-2">
                                 Product layouts
                               </h6>
-                              <ul className="list-unstyled text-muted">
+                              <NavLink to="/Product_card" className="list-unstyled text-muted">
                                 <li className="pb-3 shope">Product default</li>
                                 <li className="pb-3 shope">Product grid 1</li>
                                 <li className="pb-3 shope">Product grid 2</li>
@@ -581,7 +593,7 @@ function Navbar() {
                                 <li className="pb-3 shope">
                                   Product description vertical
                                 </li>
-                              </ul>
+                              </NavLink>
                             </div>
 
                             {/* Column 2 */}
@@ -877,7 +889,13 @@ function Navbar() {
 
                     {/* Normal Items */}
 
-                    <li>
+                    <li className="position-relative">
+                      <span
+                        className="badge position-absolute top-0 end-0 translate-middle-y"
+                        style={{ backgroundColor: "#31A56D" }}
+                      >
+                        NEW
+                      </span>
                       <a className="dropdown-item shope pb-2" href="#">
                         Timeline
                       </a>

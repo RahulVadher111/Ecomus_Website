@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { useState } from "react";
 import { Container, Row, Col, Button, Dropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
