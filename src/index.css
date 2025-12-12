@@ -837,3 +837,8 @@ button.category-btn:hover i {
   font-weight: 500;
   cursor: pointer;
 }
+
+.footer-img {
+  height: 30px;
+  object-fit: contain;
+}
