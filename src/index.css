@@ -842,3 +842,14 @@ button.category-btn:hover i {
   height: 30px;
   object-fit: contain;
 }
+.bgred:hover{
+  background-color: #db1215 !important;
+  color: #fff !important;
+}
+
+
+
+
+.tab-btn::after {
+  transition: all 0.3s ease;
+}

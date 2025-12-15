@@ -573,7 +573,7 @@ function Navbar() {
                               <h6 className="fw-semibold pb-2">
                                 Product layouts
                               </h6>
-                              <NavLink to="/Product_card" className="list-unstyled text-muted">
+                              <NavLink to="/Product_card" className="list-unstyled text-muted text-decoration-none">
                                 <li className="pb-3 shope">Product default</li>
                                 <li className="pb-3 shope">Product grid 1</li>
                                 <li className="pb-3 shope">Product grid 2</li>
