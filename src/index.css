@@ -853,3 +853,12 @@ button.category-btn:hover i {
 .tab-btn::after {
   transition: all 0.3s ease;
 }
+
+.review:hover{
+  color: #db1215 !important;
+  border: 1px solid #db1215 !important;
+}
+.colorred:hover{
+  color: #db1215 !important;
+  cursor: pointer;
+}

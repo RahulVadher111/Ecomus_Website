@@ -13,6 +13,7 @@ import Seller_arrivals from './Pages/Seller_arrivals'
 import Shop_Gram from './Pages/Shop_Gram'
 import Shopping_page from './Pages/Shopping_page';
 import ProductCard from './Pages/ProductCard';
+import Pages_About_us from './Pages/Pages_About_us';
 
 function App() {
  
@@ -39,6 +40,8 @@ function App() {
 
         <Route path="/Shopping_page" element={<Shopping_page />} />  
         <Route path="/Product_card" element={<ProductCard />} />  
+        <Route path="/Pages_About_us" element={<Pages_About_us />} />  
+
 
 
       </Routes>

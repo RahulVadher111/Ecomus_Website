@@ -604,7 +604,7 @@ function Navbar() {
                               <h6 className="fw-semibold pb-2 shope">
                                 Product details
                               </h6>
-                              <ul className="list-unstyled text-muted">
+                              <NavLink to="/Product_card" className="list-unstyled text-muted text-decoration-none">
                                 <li className="pb-3 shope">
                                   Product inner zoom
                                 </li>
@@ -633,7 +633,7 @@ function Navbar() {
                                   Recipient info form for <br /> gift card
                                   products
                                 </li>
-                              </ul>
+                              </NavLink>
                             </div>
 
                             {/* Column 3 */}
@@ -644,7 +644,7 @@ function Navbar() {
                               <h6 className="fw-semibold pb-2 shope">
                                 Product swatches
                               </h6>
-                              <ul className="list-unstyled text-muted">
+                              <NavLink to="/Product_card" className="list-unstyled text-muted text-decoration-none">
                                 <li className="pb-3 shope">
                                   Product color swatch
                                 </li>
@@ -666,7 +666,7 @@ function Navbar() {
                                 <li className="pb-3 shope">
                                   Product swatch dropdown color
                                 </li>
-                              </ul>
+                              </NavLink>
                             </div>
 
                             {/* Column 4 */}
@@ -677,7 +677,7 @@ function Navbar() {
                               <h6 className="fw-semibold pb-2 shope">
                                 Product features
                               </h6>
-                              <ul className="list-unstyled text-muted">
+                              <NavLink to="/Product_card" className="list-unstyled text-muted text-decoration-none">
                                 <li className="pb-3 shope">
                                   Frequently bought together
                                 </li>
@@ -740,7 +740,7 @@ function Navbar() {
                                   </span>
                                   Buy X Get Y
                                 </li>
-                              </ul>
+                              </NavLink>
                             </div>
                           </div>
                         </div>
@@ -807,11 +807,11 @@ function Navbar() {
                     style={{ minWidth: "280px" }}
                   >
                     {/* About us (submenu) */}
-                    <li className="dropdown-submenu position-relative pb-2">
+                    <NavLink to="/Pages_About_us" className="dropdown-submenu position-relative pb-2 text-decoration-none">
                       <a className="dropdown-item shope" href="#">
                         About us
                       </a>
-                    </li>
+                    </NavLink>
 
                     {/* Contact (submenu) */}
                     <li className="dropdown-submenu position-relative pb-2">
