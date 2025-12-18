@@ -32,7 +32,7 @@
 }
 
 .tiktok:hover{
-  background: linear-gradient(#25f4ee, #000, #fe2c55);
+  background: (#25f4ee, #000, #fe2c55);
   color: #fff !important;
 }
 .pinterest:hover{
@@ -861,4 +861,79 @@ button.category-btn:hover i {
 .colorred:hover{
   color: #db1215 !important;
   cursor: pointer;
+}
+
+/* about css */
+.custom-carousel-btn {
+  transition: all 0.3s;
+  color: black; /* arrow color */
+}
+
+.custom-carousel-btn:hover {
+  background-color: black !important;
+  color: white !important; /* arrow turns white on hover */
+}
+
+
+/* brands styale */
+.brand-card {
+  border: 1px solid #eaeaea;
+  background: #fff;
+}
+
+.brand-letter {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.brand-item {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.brand-item:hover {
+  text-decoration: underline;
+}
+.gridyent{
+  background: radial-gradient(
+      circle at top,
+      #fff5f0,
+      #ffffff 100%
+    );
+  
+}
+
+.white:hover{
+  color: #fff !important;
+}
+
+/* brand 02 style */
+.brand-row {
+  border-bottom: 1px solid #eee;
+}
+
+.brand-alpha {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 80px;
+  background: #ddd;
+  margin: auto;
+}
+
+.brand-logo {
+  max-height: 50px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 13px;
+  color: #555;
+  margin-top: 10px;
 }
