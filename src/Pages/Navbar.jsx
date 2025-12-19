@@ -839,14 +839,14 @@ function Navbar() {
                       </a>
                       <ul className="dropdown-menu position-absolute top-0 start-100 border-0 p-3">
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_Contact_us" className="dropdown-item shope " href="#">
                             Contact 1{" "}
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_Contact_Us_2" className="dropdown-item shope " href="#">
                             Contact 2
-                          </a>
+                          </NavLink>
                         </li>
                       </ul>
                     </li>
@@ -857,14 +857,14 @@ function Navbar() {
                       </a>
                       <ul className="dropdown-menu position-absolute top-0 start-100 border-0 p-3">
                         <li>
-                          <a className="dropdown-item shope " href="#">
-                            FAQ 1{" "}
-                          </a>
+                          <NavLink to="/Pages_FAQ_01" className="dropdown-item shope " href="#">
+                            FAQ 01{" "}
+                          </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
-                            FAQ 2
-                          </a>
+                          <NavLink to="/Pages_FAQ_02" className="dropdown-item shope " href="#">
+                            FAQ 02
+                          </NavLink>
                         </li>
                       </ul>
                     </li>

@@ -184,18 +184,19 @@ function Pages_Brands_02() {
       {/* Brand Rows */}
       {keys.map((key) => (
         <div
-          key={key}
-          className="row align-items-center brand-row py-4"
+          key={key + active}
+          className="row align-items-center brand-row py-4 mx-5 slide-left"
         >
+
           {/* Left Alphabet */}
-          <div className="col-md-1 text-center">
+          <div className="col-md-1 text-center border-end p-3">
             <h2 className="brand-alpha">{key}</h2>
           </div>
 
           {/* Divider */}
-          <div className="col-md-1 d-none d-md-block">
+          {/* <div className="col-md-1 d-none d-md-block">
             <div className="brand-divider"></div>
-          </div>
+          </div> */}
 
           {/* Logos */}
           <div className="col-md-10">
@@ -203,12 +204,12 @@ function Pages_Brands_02() {
               {brandsData[key].map((item, i) => (
                 <div
                   key={i}
-                  className="col-lg-3 col-md-4 col-6 text-center mb-4"
+                  className="col-lg-3 col-md-4 col-12 text-center "
                 >
                   <img
                     src={item.logo}
                     alt={item.name}
-                    className="brand-logo w-100"
+                    className="brand-logo w-100 "
                   />
                   <p className="brand-name">
                     {item.name}

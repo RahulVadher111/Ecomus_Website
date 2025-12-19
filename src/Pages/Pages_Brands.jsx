@@ -82,8 +82,8 @@ function Pages_Brands() {
       {/* Brand Cards */}
       <div className="row g-4 ">
         {filteredKeys.map((key) => (
-          <div className="col-lg-3 col-md-4 col-sm-6" key={key}>
-            <div className="brand-card p-4 h-100">
+          <div className="col-lg-3 col-md-4 col-sm-6" key={key + active}>
+            <div className="brand-card p-4 h-100 slide-left">
               <h1 className="brand-letter">{key}</h1>
               <ul className="list-unstyled mt-3">
                 {brandsData[key].map((brand, i) => (

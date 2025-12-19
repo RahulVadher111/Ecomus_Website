@@ -172,6 +172,7 @@
 
 .icon-box:hover{
   color: #db1215 !important;
+  cursor: pointer;
 }
 .badge-count {
   position: absolute;
@@ -927,7 +928,7 @@ button.category-btn:hover i {
 }
 
 .brand-logo {
-  max-height: 50px;
+  max-height: 50%;
   max-width: 100%;
   object-fit: contain;
 }
@@ -937,3 +938,19 @@ button.category-btn:hover i {
   color: #555;
   margin-top: 10px;
 }
+
+.slide-left {
+  animation: slideFromLeft 0.6s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
