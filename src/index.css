@@ -954,3 +954,29 @@ button.category-btn:hover i {
   }
 }
 
+/* FAQ 2 STYLE */
+.faq-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 4px;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.9s ease;
+}
+
+.faq-link .arrow {
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.faq-link:hover {
+  border-bottom: 1px solid #000;
+}
+
+.faq-link:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
