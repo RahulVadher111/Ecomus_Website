@@ -32,7 +32,7 @@
 }
 
 .tiktok:hover{
-  background: (#25f4ee, #000, #fe2c55);
+  background:linear-gradient(#25f4ee, #000, #fe2c55);
   color: #fff !important;
 }
 .pinterest:hover{
@@ -979,4 +979,17 @@ button.category-btn:hover i {
 .faq-link:hover .arrow {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* our store styale */
+.img-wrapper {
+  overflow: hidden;   /* IMPORTANT */
+}
+
+.store-img {
+  transition: transform 0.6s ease;
+}
+
+.img-wrapper:hover .store-img {
+  transform: scale(1.1);
 }

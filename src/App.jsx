@@ -20,6 +20,7 @@ import Pages_Contact_us from './Pages/Pages_Contact_us';
 import Pages_Contact_Us_2 from './Pages/Pages_Contact_Us_2';
 import Pages_FAQ_01 from './Pages/Pages_FAQ_01';
 import Pages_FAQ_02 from './Pages/Pages_FAQ_02';
+import Pages_Our_Store from './Pages/Pages_Our_Store';
 
 function App() {
  
@@ -53,6 +54,8 @@ function App() {
         <Route path="/Pages_Contact_Us_2" element={<Pages_Contact_Us_2 />} />  
         <Route path="/Pages_FAQ_01" element={<Pages_FAQ_01 />} />  
         <Route path="/Pages_FAQ_02" element={<Pages_FAQ_02 />} />  
+        <Route path="/Pages_Our_Store" element={<Pages_Our_Store />} />  
+
 
 
 

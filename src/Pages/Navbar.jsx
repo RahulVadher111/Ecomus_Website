@@ -875,9 +875,9 @@ function Navbar() {
                       </a>
                       <ul className="dropdown-menu position-absolute top-0 start-100 border-0 p-3">
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_Our_Store" className="dropdown-item shope " href="#">
                             Our Stroe{" "}
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
                           <a className="dropdown-item shope " href="#">
