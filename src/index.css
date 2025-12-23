@@ -993,3 +993,165 @@ button.category-btn:hover i {
 .img-wrapper:hover .store-img {
   transform: scale(1.1);
 }
+
+
+/* our locations styale */
+.location-card {
+  cursor: pointer;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.location-card:hover {
+  border-color: #000;
+}
+
+.location-card.active {
+  background: #000;
+  color: #fff;
+}
+
+.location-card.active p,
+.location-card.active strong {
+  color: #fff;
+}
+.map-box {
+  height: 100%;
+  overflow: hidden;
+}
+
+.row {
+  align-items: stretch;
+}
+
+
+/* Shopping  cart styale */
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  width: 90px;
+  justify-content: space-between;
+}
+
+.qty-box button {
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.qty-box span {
+  font-weight: 500;
+}
+
+.summary-box {
+  background: #F2F2F2;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.timer-badge {
+  background: #e11d2e;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.free-ship-box {
+  border: 1px dashed #ddd;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.progress {
+  height: 6px;
+  background: #eee;
+  position: relative;
+}
+
+.truck-icon {
+  position: absolute;
+  top: -10px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 4px;
+  border-radius: 4px;
+  border: 2px solid red;
+}
+
+.summary-box {
+  background: #f6f6f6;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.limited-text {
+  animation: fadeToggle 1.2s ease-in-out infinite;
+}
+
+@keyframes fadeToggle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* check out style */
+.order-box {
+  background: #FBFCFB;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.order-item img {
+  width: 60px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.form-label {
+  font-weight: 500;
+}
+.img-wrap {
+  position: relative;
+  width: 60px;
+}
+
+.img-wrap img {
+  width: 60px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.qty-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  background: #666666;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}

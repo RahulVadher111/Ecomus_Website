@@ -21,6 +21,9 @@ import Pages_Contact_Us_2 from './Pages/Pages_Contact_Us_2';
 import Pages_FAQ_01 from './Pages/Pages_FAQ_01';
 import Pages_FAQ_02 from './Pages/Pages_FAQ_02';
 import Pages_Our_Store from './Pages/Pages_Our_Store';
+import Pages_Our_Store_locations from './Pages/Pages_Our_Store_locations';
+import Shopping_Cart from './Pages/Shopping_Cart';
+import Check_Out from './Pages/Check_Out';
 
 function App() {
  
@@ -55,6 +58,12 @@ function App() {
         <Route path="/Pages_FAQ_01" element={<Pages_FAQ_01 />} />  
         <Route path="/Pages_FAQ_02" element={<Pages_FAQ_02 />} />  
         <Route path="/Pages_Our_Store" element={<Pages_Our_Store />} />  
+        <Route path="/Pages_Our_Store_locations" element={<Pages_Our_Store_locations />} />  
+        <Route path="/Pages_Shopping_cart" element={<Shopping_Cart />} />  
+        <Route path="/Pages_Check_Out" element={<Check_Out />} />  
+
+
+
 
 
 

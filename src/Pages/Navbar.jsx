@@ -880,9 +880,9 @@ function Navbar() {
                           </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_Our_Store_locations" className="dropdown-item shope " href="#">
                             Stroe locator
-                          </a>
+                          </NavLink>
                         </li>
                       </ul>
                     </li>
@@ -901,14 +901,14 @@ function Navbar() {
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item shope pb-2" href="#">
+                      <NavLink to="/Pages_Shopping_cart" className="dropdown-item shope pb-2" href="#">
                         View cart
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a className="dropdown-item shope pb-2" href="#">
+                      <NavLink to="/Pages_Check_Out" className="dropdown-item shope pb-2" href="#">
                         Check out
-                      </a>
+                      </NavLink>
                     </li>
 
                     <li className="dropdown-submenu position-relative pb-2">
