@@ -24,6 +24,7 @@ import Pages_Our_Store from './Pages/Pages_Our_Store';
 import Pages_Our_Store_locations from './Pages/Pages_Our_Store_locations';
 import Shopping_Cart from './Pages/Shopping_Cart';
 import Check_Out from './Pages/Check_Out';
+import Payment_confirmation from './Pages/Payment_confirmation';
 
 function App() {
  
@@ -61,6 +62,8 @@ function App() {
         <Route path="/Pages_Our_Store_locations" element={<Pages_Our_Store_locations />} />  
         <Route path="/Pages_Shopping_cart" element={<Shopping_Cart />} />  
         <Route path="/Pages_Check_Out" element={<Check_Out />} />  
+        <Route path="/Pages_Payment_Confirmation" element={<Payment_confirmation />} />  
+
 
 
 

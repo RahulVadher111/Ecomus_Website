@@ -91,7 +91,7 @@ function Check_Out() {
             <div className="order-box">
               {/* PRODUCTS */}
               <div className="order-item">
-                <div className="img-wrap">
+                <div className="img-wrap border border-3 ">
                   <img src={Seller_2_01} alt="" />
                   <span className="qty-badge">1</span>
                 </div>
@@ -105,7 +105,7 @@ function Check_Out() {
               </div>
 
               <div className="order-item">
-                <div className="img-wrap">
+                <div className="img-wrap border border-3">
                   <img src={Seller_1_02} alt="" />
                   <span className="qty-badge">1</span>
                 </div>
@@ -118,7 +118,7 @@ function Check_Out() {
               </div>
 
               <div className="order-item">
-                <div className="img-wrap">
+                <div className="img-wrap border border-3">
                   <img src={Seller_1_03} alt="" />
                   <span className="qty-badge">1</span>
                 </div>
@@ -132,7 +132,7 @@ function Check_Out() {
               </div>
 
               <div className="order-item">
-                <div className="img-wrap">
+                <div className="img-wrap border border-3">
                   <img src={Seller_1_01} alt="" />
                   <span className="qty-badge">3</span>
                 </div>
@@ -147,7 +147,7 @@ function Check_Out() {
 
               {/* DISCOUNT */}
               <div className="d-flex gap-2 my-4">
-                <input className="form-control" placeholder="Discount code" />
+                <input className="form-control p-2" placeholder="Discount code" />
                 <button className="btn btn-dark px-4">Apply</button>
               </div>
 
@@ -182,18 +182,18 @@ function Check_Out() {
               <p className="text-muted small">
                 Your personal data will be used to process your order, support
                 your experience throughout this website, and for other purposes
-                described in our <u>privacy policy</u>.
+                described in our <u className="text-dark">privacy policy</u>.
               </p>
 
               <div className="form-check mb-4">
                 <input className="form-check-input" type="checkbox" />
-                <label className="form-check-label">
+                <label className="form-check-label text-muted">
                   I have read and agree to the website{" "}
-                  <u>terms and conditions</u>.
+                  <u className="text-dark">terms and conditions</u>.
                 </label>
               </div>
 
-              <button className="btn btn-dark w-100 py-3">Place order</button>
+              <button className="btn btn-dark w-100 py-2 rounded-0">Place order</button>
             </div>
           </div>
         </div>

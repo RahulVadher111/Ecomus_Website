@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+
 
 import Seller_1_01 from "../Images/Navbar_imgs/Seller_imgs/Seller_1_01.jpg";
 import Seller_1_02 from "../Images/Navbar_imgs/Seller_imgs/Seller_1_02.jpg";
@@ -202,9 +204,9 @@ function Shopping_Cart() {
                 </label>
               </div>
 
-              <button className="btn btn-dark w-100 py-3 mb-3">
+              <NavLink to="/Pages_Check_Out" className="btn btn-dark w-100 py-3 mb-3">
                 Check out
-              </button>
+              </NavLink>
 
               <p className="text-center fw-semibold mb-2">
                 Guarantee Safe Checkout
