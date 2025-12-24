@@ -25,6 +25,11 @@ import Pages_Our_Store_locations from './Pages/Pages_Our_Store_locations';
 import Shopping_Cart from './Pages/Shopping_Cart';
 import Check_Out from './Pages/Check_Out';
 import Payment_confirmation from './Pages/Payment_confirmation';
+import My_Account from './Pages/My_Account';
+import Log_In from './Pages/Log_In';
+import Register_from from './Pages/Register_from';
+import Payment_Failure from './Pages/Payment_Failure';
+import Shoping_popup from './Pages/Shoping_popup';
 
 function App() {
  
@@ -44,6 +49,8 @@ function App() {
       <Seller_arrivals />
       <Happy_Clients />
       <Shop_Gram />
+      <Shoping_popup />
+      
       
       </>
         }
@@ -63,6 +70,14 @@ function App() {
         <Route path="/Pages_Shopping_cart" element={<Shopping_Cart />} />  
         <Route path="/Pages_Check_Out" element={<Check_Out />} />  
         <Route path="/Pages_Payment_Confirmation" element={<Payment_confirmation />} />  
+        <Route path="/Pages_My_Account" element={<My_Account />} />  
+        <Route path="/Log_in" element={<Log_In />} />  
+        <Route path="/Register_From" element={<Register_from />} />  
+        <Route path="/Pages_Payment_Failure" element={<Payment_Failure />} />  
+
+
+
+
 
 
 

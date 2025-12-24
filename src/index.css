@@ -1155,3 +1155,100 @@ button.category-btn:hover i {
   justify-content: center;
   font-weight: 600;
 }
+
+
+/* payment style */
+.payment-card {
+  max-width: 730px;
+  background: #f3f3f3;
+  border-radius: 2px;
+}
+.payment-cardd {
+  max-width: 730px;
+  /* background: #f3f3f3; */
+  border-radius: 2px;
+}
+.payment-cards {
+  max-width: 453px;
+  background: #f3f3f3;
+  border-radius: 2px;
+}
+
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.subtotal-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+.btn-row {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+/* my account style */
+.left-menu {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-item {
+  padding: 14px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  background: white;
+}
+
+.menu-item.active {
+  background: #f3f3f3;
+  color: red;
+}
+
+.right-content {
+  flex: 1;
+  /* border: 1px solid #eee; */
+  padding: 20px;
+}
+.orders-box {
+  border: 1px solid #eee;
+}
+
+.orders-head {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr 2fr 1fr;
+  background: #f3f3f3;
+  padding: 14px 18px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.orders-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr 2fr 1fr;
+  padding: 22px 18px;
+  border-top: 1px solid #eee;
+  align-items: center;
+  font-size: 14px;
+}
+
+.orders-row button {
+  border-radius: 2px;
+}

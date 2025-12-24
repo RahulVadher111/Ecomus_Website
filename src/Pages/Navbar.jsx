@@ -923,9 +923,9 @@ function Navbar() {
                           </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_Payment_Failure" className="dropdown-item shope " href="#">
                             Payment Failure
-                          </a>
+                          </NavLink>
                         </li>
                       </ul>
                     </li>
@@ -937,35 +937,35 @@ function Navbar() {
                       </a>
                       <ul className="dropdown-menu position-absolute top-0 start-100 border-0 p-3">
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_My_Account" className="dropdown-item shope " href="#">
                             My account{" "}
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_My_Account" className="dropdown-item shope " href="#">
                             {" "}
                             My order
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_My_Account" className="dropdown-item shope " href="#">
                             MY order details
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_My_Account" className="dropdown-item shope " href="#">
                             My address
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_My_Account" className="dropdown-item shope " href="#">
                             My Account details
-                          </a>
+                          </NavLink>
                         </li>
                         <li>
-                          <a className="dropdown-item shope " href="#">
+                          <NavLink to="/Pages_My_Account" className="dropdown-item shope " href="#">
                             My Wishlist
-                          </a>
+                          </NavLink>
                         </li>
                       </ul>
                     </li>
@@ -1057,7 +1057,9 @@ function Navbar() {
                 <span className="badge-count">0</span>
               </div>
 
-              <div className="icon-box position-relative">
+              <div className="icon-box position-relative"
+              data-bs-toggle="offcanvas"
+                data-bs-target="#cartOffcanvas">
                 <i className="bi bi-bag fs-5"></i>
                 <span className="badge-count">0</span>
               </div>

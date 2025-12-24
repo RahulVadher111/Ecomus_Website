@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from "react-router-dom";
+
 
 function Payment_confirmation() {
   return (
@@ -17,64 +19,53 @@ function Payment_confirmation() {
         Payment confirmation
       </h2>
 
-      <div className="row justify-content-center">
-        <div className="col-lg-8">
-          <div className="payment-card p-4 p-md-5">
-            
-            <div className="row mb-3">
-              <div className="col-6">Date</div>
-              <div className="col-6 text-end">01/01/2024</div>
-            </div>
+      <div className="payment-card mx-auto p-4 p-md-5">
 
-            <div className="row mb-3">
-              <div className="col-6">Payment method</div>
-              <div className="col-6 text-end">Visa</div>
-            </div>
-
-            <div className="row mb-3">
-              <div className="col-6">Card number</div>
-              <div className="col-6 text-end">**** **** **** 9999</div>
-            </div>
-
-            <div className="row mb-3">
-              <div className="col-6">Cardholder name</div>
-              <div className="col-6 text-end">Themesflat</div>
-            </div>
-
-            <div className="row mb-3">
-              <div className="col-6">Email</div>
-              <div className="col-6 text-end">info@fashionshop.com</div>
-            </div>
-
-            <div className="row mb-4">
-              <div className="col-6">Phone</div>
-              <div className="col-6 text-end">(212) 555-1234</div>
-            </div>
-
-            <div className="row align-items-center mb-4">
-              <div className="col-6 fw-semibold fs-5">
-                Subtotal
-              </div>
-              <div className="col-6 text-end fw-semibold fs-5">
-                $188.00 USD
-              </div>
-            </div>
-
-            <div className="row g-3">
-              <div className="col-md-6">
-                <button className="btn btn-outline-dark w-100 py-2">
-                  Cancel Payment
-                </button>
-              </div>
-              <div className="col-md-6">
-                <button className="btn btn-dark w-100 py-2">
-                  Confirm Payment
-                </button>
-              </div>
-            </div>
-
-          </div>
+        <div className="info-row">
+          <span>Date</span>
+          <span>01/01/2024</span>
         </div>
+
+        <div className="info-row">
+          <span>Payment method</span>
+          <span>Visa</span>
+        </div>
+
+        <div className="info-row">
+          <span>Card number</span>
+          <span>**** **** **** 9999</span>
+        </div>
+
+        <div className="info-row">
+          <span>Cardholder name</span>
+          <span>Themesflat</span>
+        </div>
+
+        <div className="info-row">
+          <span>Email</span>
+          <span>info@fashionshop.com</span>
+        </div>
+
+        <div className="info-row mb-3">
+          <span>Phone</span>
+          <span>(212) 555-1234</span>
+        </div>
+
+        <div className="subtotal-row">
+          <strong>Subtotal</strong>
+          <strong>$188.00 USD</strong>
+        </div>
+
+        <div className="btn-row">
+        
+          <NavLink to="/Pages_Check_Out" className="btn border border-dark button">
+            Cancel Payment
+          </NavLink>
+          <button className="btn btn-dark button">
+            Confirm Payment
+          </button>
+        </div>
+
       </div>
     </div>
     </>
