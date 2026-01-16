@@ -116,7 +116,10 @@ const ProductCard = () => {
                   Best Seller
                 </button>
                 <p className="mx-3 d-flex align-content-center justify-content-center fw-bold">
-                  Selling fast! 56 people have this in their carts.
+                  <span className="limited-text text-danger">
+            <i className="bi bi-fire"></i>
+          </span>{"--"}
+                   Selling fast! 56 people have this in their carts.
                 </p>
               </div>
 

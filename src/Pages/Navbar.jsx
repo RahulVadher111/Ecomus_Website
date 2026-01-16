@@ -1048,14 +1048,42 @@ function Navbar() {
                 <i className="bi bi-search fs-5"></i>
               </div>
 
-              <div className="icon-box">
-                <i className="bi bi-person fs-5"></i>
-              </div>
+              <div className="icon-box" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                
+             
+ <i className="bi bi-person fs-5"></i>
 
-              <div className="icon-box position-relative">
-                <i className="bi bi-heart fs-5"></i>
+{/* <!-- Modal --> */}
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Log In </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control p-3" id="recipient-name" placeholder="Email*"/>
+          </div>
+          <div class="mb-3">
+            <input class="form-control p-3" type="password" id="message-text" placeholder="Password*"></input>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+ </div>
+
+              <NavLink to="/Pages_My_Account" className="icon-box position-relative">
+                <i className="bi bi-heart fs-5 text-dark"></i>
                 <span className="badge-count">0</span>
-              </div>
+              </NavLink>
 
               <div className="icon-box position-relative"
               data-bs-toggle="offcanvas"
